@@ -1,0 +1,47 @@
+# ==================== RTSP 摄像头视频流配置 ====================
+
+cameras:
+  - name: "摄像头1"
+    host: "192.168.7.182"
+    port: 554
+    username: "admin"
+    password: "abcd1234"
+    path: "/Streaming/Channels/101"
+    enabled: true
+    # 请求的视频流分辨率 (不设置则使用摄像头默认分辨率)
+    width: 2560
+    height: 1440
+
+  - name: "摄像头2"
+    host: "192.168.1.65"
+    port: 554
+    username: "admin"
+    password: "12345"
+    path: "/h264/ch1/sub/av_stream"
+    enabled: false
+    width: 1280
+    height: 720
+
+# ---------------------------------------------------------
+# 画面显示设置
+display:
+  show_fps: true           # 是否在画面上显示实时帧率
+  show_timestamp: true     # 是否在画面上显示当前时间
+  window_name: "RTSP Stream - Demo"
+  # 显示窗口分辨率 (不设置则按原始帧尺寸显示)
+  window_width: 2880        # 设为 null 表示自适应原始分辨率
+  window_height: 1800
+
+# ---------------------------------------------------------
+# 截图保存设置
+capture:
+  save_dir: "./screenshots" # 截图保存目录
+  auto_save_enabled: false    # 是否启用自动截图
+  auto_save_interval: 30    # 自动保存截图的间隔帧数
+  image_format: "jpg"       # 截图保存的图片格式（jpg / png）
+
+# ---------------------------------------------------------
+# 断线重连设置
+reconnect:
+  delay_seconds: 3.0        # 连接失败后的重试间隔时间（秒）
+  max_retries: 10           # 最大重试次数，超过后放弃连接
