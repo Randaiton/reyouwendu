@@ -1,0 +1,49 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 虚拟环境
+venv/
+.venv/
+env/
+.env/
+
+# IDE 与编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 截图输出目录
+screenshots/
+captures/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# 环境变量与密钥
+.env
+.env.local
+.env.*.local
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 打包产物
+*.egg-info/
+dist/
+build/
+
+# 图片数据集
+.jpg
+.jpeg
+.png
+.bmp

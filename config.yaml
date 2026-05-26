@@ -36,8 +36,8 @@ display:
 # 截图保存设置
 capture:
   save_dir: "./screenshots" # 截图保存目录
-  auto_save_enabled: false    # 是否启用自动截图
-  auto_save_interval: 30    # 自动保存截图的间隔帧数
+  auto_save_enabled: true    # 是否启用自动截图
+  auto_save_interval: 4800    # 自动保存截图的间隔帧数
   image_format: "jpg"       # 截图保存的图片格式（jpg / png）
 
 # ---------------------------------------------------------
